@@ -370,7 +370,7 @@ else:
     merged = pd.concat([dfA, dfB], ignore_index=True)
 
     st.plotly_chart(
-        plot_primary(merged, f"Primary Auction Comparison — {month_label(yearA, monthA)} vs {month_label(yearB, monthB)}"),
+        plot_primary(merged, f"Primary Auction Comparison — {month_label(yearA, monA)} vs {month_label(yearB, monB)}"),
         use_container_width=True,
     )
     st.dataframe(
